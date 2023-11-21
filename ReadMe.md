@@ -9,19 +9,7 @@
 ![Criar Tarefa](<img/1 (1)Criar.png>)
 
 ```csharp
-public void CriarTarefa(int indice, string titulo, string descricao, DateTime dataVencimento)
-    {
-        Tarefa novaTarefa = new Tarefa
-        {
-            Indice = indice,
-            Titulo = titulo,
-            Descricao = descricao,
-            DataVencimento = dataVencimento,
-            Concluida = false
-        };
 
-        tarefas.Add(novaTarefa);
-    }
 ```
 
 >Deve ser possível listar todas as tarefas criadas.
@@ -29,18 +17,7 @@ public void CriarTarefa(int indice, string titulo, string descricao, DateTime da
 ![Listar Tarefas](<img/1 (2)Listar.png>)
 
 ```csharp
-public void ListarTodasTarefas()
-    {
-        foreach (Tarefa tarefa in tarefas)
-        {
-            Console.WriteLine($"ID: {tarefa.Indice}");
-            Console.WriteLine($"Título: {tarefa.Titulo}");
-            Console.WriteLine($"Descrição: {tarefa.Descricao}");
-            Console.WriteLine($"Data de Vencimento: {tarefa.DataVencimento}");
-            Console.WriteLine($"Concluída: {tarefa.Concluida}");
-            Console.WriteLine();
-        }
-    }
+
 ```
 
 >Os usuários devem poder marcar tarefas como concluídas.
@@ -55,7 +32,7 @@ public void ListarTodasTarefas()
 
 ![Listar Tarefas Pendentes](<img/1 (4)LPendente.png>)
 
-![Listar Tarefas Concluídas](<img/1 (5)LComcluir.png>)
+![Listar Tarefas Concluídas](<img/1 (5)LConcluida.png>)
 
 ```csharp
 
